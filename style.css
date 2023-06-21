@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/*This is a font imported from Google*/
+
+
+/*The root section allows you to define the variables that make up the style of the overall page.*/
+
+:root {
+    --color-purple: #c575bd;
+    --color-pink: #fc9696;
+    --color-light-pink: #ffb0b0;
+    --color-light-grey: #d1d1d1;
+    
+}
+
+/*i'm not sure why the * is followed by a comma*/
+*, body {
+    margin: 0; 
+        /*this specifies that we want to remove all margins throughout the page*/
+    font-family: 'Poppins', sans-serif;
+        /*this says, use the fonts we imported throughout the body*/
+    color: white;    
+}
+
+header {
+   background: linear-gradient(var(--color-light-pink), var(--color-pink), var(--color-purple));
+        /*this property specifies that the colors must transition from the first to the last.*/
+        
+}
+
+header nav {
+    padding: 30px 5% 0px 5%;
+    display: flex; 
+        /*flex specifies that the two main elements (h1 and div) within the navbar should display flexibly around one another. 
+        i.e. this makes them sit next to one another*/
+    justify-content: space-between;
+        /*this adds a space between the two main elements in the navigation section of the header (the name and the links)*/
+    align-items: center;
+}
+
+header nav h1 {
+    margin: 0;
+    text-transform: uppercase;  /*capitalizes the title*/
+    color: white;
+}
+
+header nav .nav-titles {
+        /*specifies we want to style the links ("chains, rings, etc.) within the header*/
+    display: flex;
+        /*arranges the p elements around one another, so they display side-by-side, not stacked*/
+    align-items: center;
+        /*arranges the links relative to the center of the element's respective containers*/
+}
+
+
+header nav .nav-titles p {
+    margin: 0 15px 0 0;
+        /*this assigns a margin of 15px to the right of each nav item*/
+        /*as a reminder, inline level elements cannot receive */
+    color: white; 
+        /*not required to specify because text color was specified for all body elements*/
+}
+
+header nav .nav-titles p:hover {
+    color: var(--color-purple);
+    cursor: pointer;
+}
+
+
+header nav .nav-titles button {
+    padding: 5px 15px;
+    font-size: 1.2em;
+    background-color: inherit; /*tells the button to inerit the color of the background of the navigation*/
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+header nav .nav-titles button:hover {
+    color: inherit; /*i'm not clear what is inheriting what here*/
+    background-color: var(--color-purple);
+    border: 1px solid var(--color-purple);
+        /*allows the button and its border to turn purple when the mouse hovers over it*/
+}
+
+.banner {
+    padding: 30px 5%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner .banner-info {
+    width: 100%;
+    flex-shrink: 1;     /*specifies not to go beyond banner of its parents*/
+}
+
+.banner .banner-info h1 {
+    margin: 0;
+    font-size: 4vw;     /*vw is view width, makes the title larger*/
+    width: 80%;          /*80% of the space dedicated to the description title*/
+}
+
+.banner .banner-info p {
+    font-weight: 400;
+}
+
+
+.banner .banner-info button {
+    margin-top: 20px; /*adds space between the top of the button and the bottom of the detail text*/
+    padding: 15px 20px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/*FIGURE OUT WHY THE BANNER IMAGE IS SO SMALL---image file was too smal*/
+.banner .banner-image img {
+    width: 80%;
+    margin: 5%;
+    border-radius: 50%;
+    transition: 250ms ease-in-out, opacity 250ms linear;
+}
+
+.banner .banner-image img:hover {
+    transform: scale(1.2); /*specifies ring should increase to 1.2 times its size when hovered*/
+    opacity: 0.5; /*changes opacity of the image when hovered*/
+}
+
+.banner .banner-image .banner-background {
+    background-color: var(--color-purple);
+    border-radius: 50%;
+    padding: 100% 100% 0 0;
+    z-index: -1; /*makes circle stack below the main image*/
+    margin-top: -50%; /*causes the overlap with the main image*/
+}
+
+.hero .banner-info button{
+    background-color: inherit;
+    border: 1px solid white;
+}
+
+.hero .banner-info button:hover {
+    background-color: var(--color-purple);
+    border: 1px solid var(--color-purple);
+}
+
+.hero .banner-info .banner-details {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap; /*if they don't have enough space to be beside one another, they'll go to the next line*/
+    align-items: center;
+}
+
+.hero .banner-info .banner-details .banner-detail {
+    margin: 0 15px 15px 0;
+    border-radius: 50%;
+    transition: filter 0.5s;    /*delays the shadow filter by half a second when mouse hovers small rings on the left*/
+}
+
+.hero .banner-info .banner-details .banner-detail:hover {
+    filter: brightness(50%);    /*dims or adds shaddow over the smaller rings on the left when hovered*/
+}
+.hero .banner-info .banner-details .banner-detail img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.middle {
+    margin: 0;
+    background-color: var(--color-purple);
+}
+
+.middle .banner-info button {
+    background-color: inherit;
+    border: 1px solid white;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.middle .banner-info button:hover {
+    background-color: var(--color-pink);
+    border: 1px solid var(--color-pink);
+}
+
+
+footer {
+    margin: 0;
+    padding: 20px;
+    padding-top: 4em;
+    background-color: black;
+}
+
+footer .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+footer .footer-columns h3 {
+    color: var(--color-purple);
+    margin: 20px 0;
+    text-align: center;
+}
+
+footer .footer-columns p {
+    cursor: pointer;
+    color: var(--color-light-grey);
+}
+    
+
+footer .footer-columns p:hover {
+    color: white;
+}
+
+footer .footer-end .links {
+    width: 60%;
+    margin: 2em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .footer-end .links img {
+    width: 20px;
+    cursor: pointer;
+}
+
+footer p{
+    text-align: center;
+    font-size: 0.8em;
+    margin: 10px;
+}
+
+
+/*keep at bottom of page to apply responsiveness to all html styling*/
+@media screen and (max-width: 640px){
+    /*640 is the max width of a mobile phone*/
+    nav .nav-titles p {
+        display: none;
+        /* this hides the navigation links if the screen is shrunken below a certain width*/
+    }
+    
+    .banner .banner-info h1 {
+        font-size: 2em;
+    }
+
+    .banner .banner-image {
+        display: none;  /*hides large photo in mobile screen mode*/
+    }
+
+    .hero .banner-info .banner-details .banner-detail img {
+        width: 90px;
+        height: 90px;
+        margin: 5px;
+    }
+
+    footer .footer-columns {
+        justify-content: center;        
+    }
+
+    footer .footer-columns .footer-columns {
+        width: 100%;    /*this media query says each column should take up the full width of the page if viewed on a mobile device
+                            this results in a page width of 1 column, so each column of text is stacked vertically*/
+    }
+
+    footer .footer-end .links {
+        width: 100%;
+    }
+}

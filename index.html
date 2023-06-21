@@ -1,0 +1,143 @@
+<!--tutorial used: Code Labs Academy https://www.youtube.com/watch?v=BiIfVv3OMNg-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jewel's Gems</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Jewel's Gems</h1>
+                <!--shortcuts to use in "Emmet Abreviation," which comes preloaded in HTML 5:
+                div.nav-titles creates a class in your div container called nav-titles
+                p*3 creates 3 <p></p> tags.-->
+            <div class="nav-titles">
+                <p>Chains</p>
+                <p>Rings</p>
+                <p>View All</p>
+                <button>Collections</button>
+            </div>
+        </nav>
+    
+        <section class="banner hero">
+                    <!--two class names to specify generic section styling (banner) and specific styling for just the banner at the top third (hero)-->
+            <div class="banner-info">               <!--this contains the banner, button and images in the far left column-->
+                <h1> Jewel's Gems New Collection</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste officiis, illo laborum inventore id modi veniam voluptates magnam qui impedit voluptatum aliquam at ipsum tempore accusamus soluta perferendis ratione quam!</p>
+                <button>Purchase now</button>
+                <div class="banner-details">        <!--this container holds 4 images, each within its own smaller container-->
+                    <div class="banner-detail">
+                        <img src="images/ring1.jpg" alt="ring1">
+                    </div>                   
+                    <div class="banner-detail">
+                        <img src="images/ring2.jpg" alt="ring2">
+                    </div>
+                    <div class="banner-detail">
+                        <img src="images/ring3.jpg" alt="ring3">
+                    </div>
+                    <div class="banner-detail">
+                        <img src="images/ring6.jfif" alt="ring4">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="banner-image">              <!--this contains the right column's large elements: an image and a circle-->
+                <img src="images/official images/img2.jpg" alt="big image ring 6">
+                <div class="banner-background">
+                    <!--an emtpy container that will be styled to look like a large colored circle behind the image.-->
+                </div>
+            </div>
+
+        </section>
+    </header>
+        <section class="banner middle">     <!--in this container the position of the large image is in the left column instead of right-->
+            <div class="banner-image">      
+                <img src="images/ring7.jfif" alt="red flower ring 7">
+            </div>
+            <div class="banner-info">       <!--could this have been named "banner-details" too?-->
+                <p class="middle-title">
+                    Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                <h1>Jewel's Gems New Arrivals</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, quidem aspernatur pariatur mollitia repellendus magni! Nihil a ullam assumenda, hic adipisci explicabo dolorem ipsum, quaerat provident illum et ipsa ut.
+                    </p>
+                <button>New Arrivals</button>
+            </div>
+        </section>
+        
+        <section class="banner middle">
+            <div class="banner-info">       
+                <p class="middle-title">
+                    Lorem ipsum dolor sit amet consectetur
+                    </p>
+                <h1>Jewel's Gems Collaborations</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, quidem aspernatur pariatur mollitia repellendus magni! Nihil a ullam assumenda, hic adipisci explicabo dolorem ipsum, quaerat provident illum et ipsa ut.
+                    </p>
+                <button>Collaborate</button>
+            </div>
+                <div class="banner-image" alt="ring 5">
+                    <img src="images/official images/img6 (1).jpg" alt="ring5">
+                </div>
+
+        </section>
+
+  
+    
+    <footer>
+        <div class="div footer-columns">
+            <div class="div footer-column">
+                <h3>Products</h3>
+                <p>All Jewelry</p>
+                <p>Earrings</p>
+                <p>Necklaces</p>                
+                <p>Rings</p>
+                <p>Bracelets</p>
+                <p>Anklets</p>
+            </div>
+            <div class="div footer-column">
+                <h3>Company</h3>
+                <p>We are Jewel's Gems</p>
+                <p>Our Vision</p>                
+                <p>Collaboration</p>
+                <p>Production</p>
+            </div>
+            <div class="div footer-column">
+                <h3>Contact</h3>
+                <p>careers@jewelsgems.com</p>
+                <p>support@jewelsgems.com</p>
+            </div>
+            <div class="div footer-column">
+                <h3>Help</h3>
+                <p>Terms and Conditions</p>                
+                <p>Shipping and Return</p>
+                <p>Sizing Guide</p>
+                <p>Privacy Policy</p>
+            </div>            
+        </div>
+        <div class="footer-end">
+            <div class="links">
+                <img src="images/facebook-icon.png" alt="white f in blue circle - facebook-icon" class="link-icon">
+                <img src="images/IG-icon.jfif" alt="rainbow pink-yellow camera outline - Instagram icon" class="link-icon">
+                <img src="images/pinterest-icon.png" alt="cursive white P on red circle - pinterest icon" class="link-icon">
+                <h3 class="footer-title">Jewel's Gems</h3>
+                <img src="images/tumbler-icon.png" alt="white t on black rectangle - tumblr icon" class="link-icon">
+                <img src="images/twitter-icon.jfif" alt="light blue bird on white background - Twitter icon" class="link-icon">
+                <img src="images/youtube-icon.png" alt="red rectangular play button with centered white triangle - youtube icon" class="link-icon">
+            </div>            
+        </div>
+        <p>@Jewel's Gems 2022, All rights reserved
+         </p>
+    </footer>
+</body>
+
+</html>
