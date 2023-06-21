@@ -260,6 +260,11 @@ footer p{
         margin: 5px;
     }
 
+    .bottom-ring{
+        height: 100px;
+        width: 50px;
+    }
+
     footer .footer-columns {
         justify-content: center;        
     }
